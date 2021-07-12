@@ -3,8 +3,8 @@ import allData from '../../allData';
 import Question from './Question';
 
 const QuestionRender = () => {
-    const first20 = allData.slice(0, 20);
-    const [question] = useState(first20);
+    const allQuestion = allData.slice(0, 30);
+    const [question] = useState(allQuestion);
     return (
         <div>
             <div className="header my-4">

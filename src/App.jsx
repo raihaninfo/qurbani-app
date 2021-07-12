@@ -4,6 +4,8 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import Home from "./components/Homepage/Home";
 import QuestionRender from "./components/Question/QuestionRender";
+import HistoryOfQurbani from "./components/QurbaniDetails/HistoryOfQurbani";
+import QurbaniDetails from "./components/QurbaniDetails/QurbaniDetails";
 function App() {
 
   return (
@@ -13,6 +15,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/question" component={QuestionRender} />
+          <Route path="/details" component={QurbaniDetails} />
+          <Route path='/history' component={HistoryOfQurbani} />
         </Switch>
         <Footer></Footer>
       </div>
