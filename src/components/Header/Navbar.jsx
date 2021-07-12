@@ -33,9 +33,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/history">
                     কুরবানির ইতিহাস
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

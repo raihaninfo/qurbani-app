@@ -8,8 +8,6 @@ const Home = () => {
     return (
         <div>
             <Form></Form>
-
-
             <QuestionRouter></QuestionRouter>            
         </div>
     );
