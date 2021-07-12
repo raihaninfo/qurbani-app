@@ -1,20 +1,25 @@
-import { useState } from 'react';
+import { useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import allData from "./allData";
-import './App.css';
-import Navbar from './components/Header/Navbar';
-import Home from './components/Homepage/Home';
-import Question from './components/Question/Question';
+import "./App.css";
+import Navbar from "./components/Header/Navbar";
+import Home from "./components/Homepage/Home";
+import Question from "./components/Question/Question";
 function App() {
-  const first20 = allData.slice(0,20)
-  const [question] = useState(first20)
+  const first20 = allData.slice(0, 20);
+  const [question] = useState(first20);
 
-  console.log(question)
+  console.log(question);
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Home></Home>
-      <Question></Question>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar></Navbar>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/a" component={Question} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
