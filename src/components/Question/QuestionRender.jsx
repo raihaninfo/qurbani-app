@@ -8,7 +8,7 @@ const QuestionRender = () => {
     return (
         <div>
             <div className="header my-4">
-                <h2>কুরবানি নিয়ে কিছু প্রস্ন উত্তর</h2>
+                <h2>কুরবানি নিয়ে কিছু প্রশ্ন উত্তর</h2>
                 <p>প্রশ্নগুলো মাসিক আল-কাওসার থেকে সংগ্রহ করা</p>
             </div>
                 {question.map((question)=>(
