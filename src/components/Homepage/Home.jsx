@@ -1,12 +1,16 @@
 import React from 'react';
 import Form from '../Form/Form';
-import Question from '../Question/Question';
+import QuestionRouter from '../Question/QuestionRender';
+
 
 const Home = () => {
+
     return (
         <div>
             <Form></Form>
-            <Question></Question>
+
+
+            <QuestionRouter></QuestionRouter>            
         </div>
     );
 };

@@ -1,36 +1,37 @@
 import React from 'react';
 
-const Question = () => {
+const Question = (props) => {
+    let {question, answer, key, address, ref} = props.question;
+   let keyWithHash = `#${key}`;
+    console.log(key)
     return (
         <div>
-            <div className="header mb-3">
-                <h2>কুরবানি নিয়ে কিছু প্রস্ন উত্তর</h2>
-                <p>প্রশ্নগুলো মাসিক আল-কাওসার থেকে সংগ্রহ করা</p>
-            </div>
             <div className="question">
             <div className="container">
-                <div>
+                <div className='border m-3 p-3'>
                     <h2>
                     <p
-                        className="h2"
+                        className="h5"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#a"
+                        data-bs-target={keyWithHash}
                         aria-expanded="false"
-                        aria-controls="a"
+                        aria-controls={key}
                     >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                        {question}
                     </p>
+                    <p className='h6'>প্রশ্ন করেছেন : {address}</p>
                     </h2>
 
-                    <div className="collapse" id="a">
+                    <div className="collapse" id={key}>
                     <div className="card card-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nisi, debitis placeat rem ipsam ea id veritatis similique dolore perferendis alias, pariatur earum quibusdam. Iure labore dolorem ex quis quidem.
+                    {answer}
+                    <p>দলিলঃ-{ref}</p>
                     </div>
                     </div>
                 </div>
                 </div>
-                        </div>
+            </div>
 
         </div>
     );

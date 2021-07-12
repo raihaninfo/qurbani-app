@@ -28,9 +28,9 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/question">
                     মাসায়েল
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="/">
