@@ -1,7 +1,9 @@
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");
 .App {
   text-align: center;
 }
 body {
   margin: 0;
   padding: 0;
+  font-family: "SolaimanLipi", sans-serif;
 }
