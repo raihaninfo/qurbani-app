@@ -1,11 +1,11 @@
 import React from "react";
+import './qurbani.css'
 
 const QurbaniDetails = () => {
   return (
     <div className="container">
-      <h4>রুপার নিসাব ও মূল্যের বিবরণ</h4>
-      <p className="text-justify">
-        {" "}
+      <h2 className='mt-3'>রুপার নিসাব ও মূল্যের বিবরণ</h2>
+      <p className="pra-details">
         কেউ যদি রুপাকে নিসাব ধরে তবে তাকে সাড়ে ৫২ ভরি/তোলা রুপার মূল্যের উপর
         টাকার পরিমাণ হিসাব করতে হবে। যেমন চলতি বছরের জুন মাসের হিসাব অনুযায়ী-২২
         ক্যারেটের প্রতি ভরি রুপার মূল্য ১ হাজার ৫১৬ টাকা হিসাবে সাড়ে ৫২ তোলা
