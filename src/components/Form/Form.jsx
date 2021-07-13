@@ -5,6 +5,7 @@ const Form = () => {
   const [check, setCheck] = useState({
     name: "",
     amount: "",
+    message: "",
   });
 
   const handleBlur = (e) => {
@@ -13,14 +14,20 @@ const Form = () => {
     setCheck(newCheck);
   };
 
+  // let name = check.amount
+  // console.log(name)
+
 
   
-  let handleSubmit = (e, jjjj) => {
-      const name = check.name
-      const amount = check.amount
-
-
-
+  let handleSubmit = (e) => {
+    if(check.name && check.amount){
+      const newCheck = { ...check };
+      
+      if (check.amount > 50000) newCheck["message"] = "Hoise";
+      else newCheck["message"] = "Hoy Nai";
+      
+      setCheck(newCheck);
+    }
     e.preventDefault();
   };
 
@@ -47,7 +54,7 @@ const Form = () => {
 
               <div className="mb-3">
                 <label htmlFor="amount" className="form-label">
-                  আপনার কত টাকা আছে ?
+                  প্রয়োজনের অতিরিক্ত আপনি কত টাকার মালিক ?
                 </label>
                 <input
                   onBlur={handleBlur}
@@ -69,8 +76,7 @@ const Form = () => {
               </div>
             </form>
             <p>
-              {" "}
-
+            {check.message}
               {/* প্রিয় (নাম) আপনার উপর কুরবানি ওয়াজিব হয়েছে।, কুরবানির প্রস্তুতি
               নেয়ার আহবান রইল, <Link to="/details">বিস্তারিত আরও জানুন</Link>{" "} */}
             </p>

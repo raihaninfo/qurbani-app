@@ -3,7 +3,6 @@ import React from "react";
 const Question = (props) => {
   let { question, answer, key, address, ref } = props.question;
   let keyWithHash = `#${key}`;
-  console.log(key);
   return (
     <div>
       <div className="question">
