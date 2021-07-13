@@ -1,0 +1,16 @@
+.not-fount{
+    min-height: 100vh;
+}
+.center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-error{
+    color: rgb(192, 17, 17);
+    font-size: 30px;
+}
+.error-pra{
+    font-size: 22px;
+}

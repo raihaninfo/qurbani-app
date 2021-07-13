@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import Home from "./components/Homepage/Home";
+import ErrorPage from "./components/NotFount/ErrorPage";
 import QuestionRender from "./components/Question/QuestionRender";
 import HistoryOfQurbani from "./components/QurbaniDetails/HistoryOfQurbani";
 import QurbaniDetails from "./components/QurbaniDetails/QurbaniDetails";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/question" component={QuestionRender} />
           <Route path="/details" component={QurbaniDetails} />
           <Route path="/history" component={HistoryOfQurbani} />
+          <Route component={ErrorPage} />
         </Switch>
         <Footer></Footer>
       </div>
