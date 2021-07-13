@@ -45,6 +45,7 @@ const Form = () => {
                   আপনার নাম লিখুন
                 </label>
                 <input
+                  required
                   onBlur={handleBlur}
                   placeholder="আপনার নাম লিখুন"
                   className="form-control"
@@ -79,7 +80,8 @@ const Form = () => {
             </form>
             <p className="message">
               {" "}
-              {check.sayHi} {check.name} {check.message} <Link to="/details">বিস্তারিত আরও জানুন</Link>
+              {check.sayHi} {check.name} {check.message}{" "}
+              <Link to="/details">বিস্তারিত আরও জানুন</Link>
             </p>
           </div>
         </div>
