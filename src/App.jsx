@@ -7,7 +7,6 @@ import QuestionRender from "./components/Question/QuestionRender";
 import HistoryOfQurbani from "./components/QurbaniDetails/HistoryOfQurbani";
 import QurbaniDetails from "./components/QurbaniDetails/QurbaniDetails";
 function App() {
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -16,7 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/question" component={QuestionRender} />
           <Route path="/details" component={QurbaniDetails} />
-          <Route path='/history' component={HistoryOfQurbani} />
+          <Route path="/history" component={HistoryOfQurbani} />
         </Switch>
         <Footer></Footer>
       </div>
