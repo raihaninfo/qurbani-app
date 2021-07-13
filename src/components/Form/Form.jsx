@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Form.css";
 
 const Form = () => {
@@ -6,6 +7,7 @@ const Form = () => {
     name: "",
     amount: "",
     message: "",
+    sayHi: "",
   });
 
   const handleBlur = (e) => {
@@ -14,18 +16,18 @@ const Form = () => {
     setCheck(newCheck);
   };
 
-  // let name = check.amount
-  // console.log(name)
-
-
-  
   let handleSubmit = (e) => {
-    if(check.name && check.amount){
+    if (check.name && check.amount) {
       const newCheck = { ...check };
-      
-      if (check.amount > 50000) newCheck["message"] = "Hoise";
-      else newCheck["message"] = "Hoy Nai";
-      
+      newCheck["amount"] = check.amount;
+      newCheck["sayHi"] = "প্রিয়..";
+      if (check.amount > 50000)
+        newCheck["message"] =
+          "আপনার উপর কুরবানি ওয়াজিব হয়েছে, কুরবানির প্রস্তুতি নেয়ার আহবান রইল।";
+      else
+        newCheck["message"] =
+          "আপনার উপর কুরবানি ওয়াজিব হয়নি, আল্লাহ তায়ালা আপনাকে কুরবানি দেয়ার সমার্থ দান করুন।";
+
       setCheck(newCheck);
     }
     e.preventDefault();
@@ -75,10 +77,9 @@ const Form = () => {
                 />
               </div>
             </form>
-            <p>
-            {check.message}
-              {/* প্রিয় (নাম) আপনার উপর কুরবানি ওয়াজিব হয়েছে।, কুরবানির প্রস্তুতি
-              নেয়ার আহবান রইল, <Link to="/details">বিস্তারিত আরও জানুন</Link>{" "} */}
+            <p className="message">
+              {" "}
+              {check.sayHi} {check.name} {check.message} <Link to="/details">বিস্তারিত আরও জানুন</Link>
             </p>
           </div>
         </div>
