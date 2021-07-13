@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from '../Form/Form';
-import QuestionRouter from '../Question/QuestionRender';
+import QurbaniInfo from '../QurbaniDetails/QurbaniInfo';
 
 
 const Home = () => {
@@ -8,7 +8,8 @@ const Home = () => {
     return (
         <div>
             <Form></Form>
-            <QuestionRouter></QuestionRouter>            
+            {/* <QuestionRouter></QuestionRouter>             */}    
+            <QurbaniInfo></QurbaniInfo> 
         </div>
     );
 };
