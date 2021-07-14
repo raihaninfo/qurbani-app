@@ -38,8 +38,8 @@ const Form = () => {
       <div className="container">
         <div className="row form-row">
           <div className="col-md-10 m-auto ">
-            <form className="mt-4 " onSubmit={handleSubmit}>
-              <h2>জেনে নিন আপনার কুরবানি ওয়াজিব হয়েছে কিনা..</h2>
+            <form className=" " onSubmit={handleSubmit}>
+              <h2 className="py-4">জেনে নিন আপনার কুরবানি ওয়াজিব হয়েছে কিনা..</h2>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   আপনার নাম লিখুন
