@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Qurbani App
+            Qurbani
           </Link>
           <button
             className="navbar-toggler"
@@ -43,6 +43,15 @@ const Navbar = () => {
                   to="/history"
                 >
                   কুরবানির ইতিহাস
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/amol"
+                >
+                  যিলহজের আমল
                 </Link>
               </li>
             </ul>
