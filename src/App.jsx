@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import Amol from "./components/Amol/Amol";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import History from "./components/History/History";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/question" component={QuestionRender} />
           <Route path="/details" component={QurbaniDetails} />
           <Route path="/history" component={History} />
+          <Route path="/amol" component={Amol}/>
           <Route component={ErrorPage} />
         </Switch>
         <Footer></Footer>
