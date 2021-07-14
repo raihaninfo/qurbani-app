@@ -21,12 +21,12 @@ const Form = () => {
       const newCheck = { ...check };
       newCheck["amount"] = check.amount;
       newCheck["sayHi"] = "প্রিয়..";
-      if (check.amount > 50000)
+      if (check.amount >= 50000)
         newCheck["message"] =
           "আপনার উপর কুরবানি ওয়াজিব হয়েছে, কুরবানির প্রস্তুতি নেয়ার আহবান রইল।";
       else
         newCheck["message"] =
-          "আপনার উপর কুরবানি ওয়াজিব হয়নি, আল্লাহ তায়ালা আপনাকে কুরবানি দেয়ার সমার্থ দান করুন।";
+          "আপনার উপর কুরবানি ওয়াজিব হয়নি, আল্লাহ তায়ালা আপনাকে কুরবানি দেয়ার তাওফিক দান করুন।";
 
       setCheck(newCheck);
     }
