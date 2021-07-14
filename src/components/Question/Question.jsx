@@ -7,7 +7,7 @@ const Question = (props) => {
     <div>
       <div className="question">
         <div className="container">
-          <div className="border m-3 p-3">
+          <div className="border m-3 p-3 shadow">
             <h2>
               <p
                 className="h5"
@@ -18,8 +18,9 @@ const Question = (props) => {
                 aria-controls={key}
               >
                 {question}
+                <p className="h6">প্রশ্ন করেছেন : {address}</p>
               </p>
-              <p className="h6">প্রশ্ন করেছেন : {address}</p>
+              
             </h2>
 
             <div className="collapse" id={key}>

@@ -1,10 +1,10 @@
 import React from "react";
-import './qurbani.css'
+import './qurbani.css';
 
 const QurbaniDetails = () => {
   return (
     <div className="container">
-      <h2 className='mt-3'>রুপার নিসাব ও মূল্যের বিবরণ</h2>
+      <h2 className='py-3'>রুপার নিসাব ও মূল্যের বিবরণ</h2>
       <p className="pra-details">
         কেউ যদি রুপাকে নিসাব ধরে তবে তাকে সাড়ে ৫২ ভরি/তোলা রুপার মূল্যের উপর
         টাকার পরিমাণ হিসাব করতে হবে। যেমন চলতি বছরের জুন মাসের হিসাব অনুযায়ী-২২
