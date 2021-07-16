@@ -11,3 +11,7 @@ body {
   font-family: "SolaimanLipi", sans-serif;
   overflow-x: hidden;
 }
+
+.text-align-all {
+  text-align: justify;
+}
