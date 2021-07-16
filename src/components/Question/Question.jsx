@@ -7,7 +7,7 @@ const Question = (props) => {
     <div>
       <div className="question">
         <div className="container">
-          <div className="border m-3 p-3 shadow">
+          <div className="border m-3 p-3 shadow text-align-all">
             <h2>
               <p
                 className="h5"
