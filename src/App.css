@@ -18,3 +18,6 @@ body {
 .text-align-all {
   text-align: justify;
 }
+p {
+  font-size: 17px;
+}
