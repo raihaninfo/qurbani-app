@@ -14,6 +14,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar></Navbar>
+        {/* router */}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/question" component={QuestionRender} />
