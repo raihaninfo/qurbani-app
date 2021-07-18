@@ -8,6 +8,7 @@ import Home from "./components/Homepage/Home";
 import ErrorPage from "./components/NotFount/ErrorPage";
 import QuestionRender from "./components/Question/QuestionRender";
 import QurbaniDetails from "./components/QurbaniDetails/QurbaniDetails";
+import Qurbanipdf from "./components/QurbaniDetails/Qurbanipdf";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/details" component={QurbaniDetails} />
           <Route path="/history" component={History} />
           <Route path="/amol" component={Amol}/>
+          <Route path="/pdf" component={Qurbanipdf} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer></Footer>
