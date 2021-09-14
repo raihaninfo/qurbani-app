@@ -18,7 +18,8 @@ const Question = (props) => {
                 aria-controls={key}
               >
                 {question}
-                <p className="h6">প্রশ্ন করেছেন : {address}</p>
+                <hr/>
+                <p className="h6 py-1">প্রশ্ন করেছেন : {address}</p>
               </p>
               
             </h2>
