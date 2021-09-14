@@ -19,7 +19,7 @@ const Question = (props) => {
               >
                 {question}
                 <hr/>
-                <p className="h6 py-1">প্রশ্ন করেছেন : {address}</p>
+                <p className="h6 py-1">প্রশ্ন করেছেন: {address}</p>
               </p>
               
             </h2>
