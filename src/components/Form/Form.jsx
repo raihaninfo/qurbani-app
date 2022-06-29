@@ -21,7 +21,7 @@ const Form = () => {
       const newCheck = { ...check };
       newCheck["amount"] = check.amount;
       newCheck["sayHi"] = "প্রিয়..";
-      if (check.amount >= 50000)
+      if (check.amount >= 64260)
         newCheck["message"] =
           "আপনার উপর কুরবানি ওয়াজিব হয়েছে, কুরবানির প্রস্তুতি নেয়ার আহবান রইল।";
       else
